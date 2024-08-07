@@ -1,4 +1,5 @@
 
+
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.prompts import ChatPromptTemplate
@@ -67,7 +68,7 @@ def get_response(user_query: str, db: SQLDatabase, chat_history: list):
   prompt = ChatPromptTemplate.from_template(template)
   
   # llm = ChatOpenAI(model="gpt-4-0125-preview")
-  llm = ChatGroq(model="mixtral-8x7b-32768", temperature=0)
+  llm = ChatGroq(model="llama-3.1-70b-versatile",temperature="1")
   
   chain = (
     RunnablePassthrough.assign(query=sql_chain).assign(
@@ -100,11 +101,11 @@ with st.sidebar:
     st.subheader("Settings")
     st.write("This is a simple chat application using MySQL. Connect to the database and start chatting.")
     
-    st.text_input("Host", value="localhost", key="Host")
+    st.text_input("Host", value="sql12.freesqldatabase.com", key="Host")
     st.text_input("Port", value="3306", key="Port")
-    st.text_input("User", value="root", key="User")
-    st.text_input("Password", type="password", value="", key="Password")
-    st.text_input("Database", value="Chinook", key="Database")
+    st.text_input("User", value="sql12724608", key="User")
+    st.text_input("Password", type="password", value="aeCpMw3JyS", key="Password")
+    st.text_input("Database", value="sql12724608", key="Database")
     
     if st.button("Connect"):
         with st.spinner("Connecting to database..."):
@@ -138,64 +139,3 @@ if user_query is not None and user_query.strip() != "":
         st.markdown(response)
         
     st.session_state.chat_history.append(AIMessage(content=response))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
