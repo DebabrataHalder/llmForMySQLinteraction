@@ -98,9 +98,9 @@ with st.sidebar:
     
     st.text_input("Host", value="sql12.freesqldatabase.com", key="Host")
     st.text_input("Port", value="3306", key="Port")
-    st.text_input("User", value="sql12724608", key="User")
-    st.text_input("Password", type="password", value="aeCpMw3JyS", key="Password")
-    st.text_input("Database", value="sql12724608", key="Database")
+    st.text_input("User", value="sql12730444", key="User")
+    st.text_input("Password", type="password", value="y1AS8ta7sY", key="Password")
+    st.text_input("Database", value="sql12730444", key="Database")
     
     model_name = st.selectbox("Select Model", 
                               options=["gemma2-9b-it", "llama-3.1-70b-versatile", "mixtral-8x7b-32768"],
