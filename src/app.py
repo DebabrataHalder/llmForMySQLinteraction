@@ -4,7 +4,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.utilities import SQLDatabase
 from langchain_core.output_parsers import StrOutputParser
-from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
 import streamlit as st
 
@@ -98,9 +97,9 @@ with st.sidebar:
     
     st.text_input("Host", value="sql12.freesqldatabase.com", key="Host")
     st.text_input("Port", value="3306", key="Port")
-    st.text_input("User", value="sql12740966", key="User")
-    st.text_input("Password", type="password", value="MzJbSWVqGS", key="Password")
-    st.text_input("Database", value="sql12740966", key="Database")
+    st.text_input("User", value="sql12742561", key="User")
+    st.text_input("Password", type="password", value="vpLDjpbABG", key="Password")
+    st.text_input("Database", value="sql12742561", key="Database")
     
     model_name = st.selectbox("Select Model", 
                               options=["gemma2-9b-it", "llama-3.1-70b-versatile", "mixtral-8x7b-32768"],
