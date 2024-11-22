@@ -102,7 +102,7 @@ with st.sidebar:
     st.text_input("Database", value="sql12746348", key="Database")
     
     model_name = st.selectbox("Select Model", 
-                              options=["llama-3.1-70b-versatile","gemma2-9b-it","mixtral-8x7b-32768"],
+                              options=["llama-3.1-70b-versatile","mixtral-8x7b-32768"],
                               index=0)
     
     if st.button("Connect"):
