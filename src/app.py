@@ -132,6 +132,9 @@ if user_query is not None and user_query.strip() != "":
     
     with st.chat_message("Human"):
         st.markdown(user_query)
+
+
+# xyz
         
     with st.chat_message("AI"):
         response = get_response(user_query, st.session_state.db, st.session_state.chat_history, st.session_state.model_name)
