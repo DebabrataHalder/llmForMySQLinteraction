@@ -136,9 +136,9 @@ with st.sidebar:
     
     st.text_input("Host", value="sql12.freesqldatabase.com", key="Host")
     st.text_input("Port", value="3306", key="Port")
-    st.text_input("User", value="sql12757519", key="User")
-    st.text_input("Password", type="password", value="hcyPqucX7E", key="Password")
-    st.text_input("Database", value="sql12757519", key="Database")
+    st.text_input("User", value="sql12760081", key="User")
+    st.text_input("Password", type="password", value="D7g7miLcFB", key="Password")
+    st.text_input("Database", value="sql12760081", key="Database")
     
     model_name = st.selectbox(
         "Select Model", 
