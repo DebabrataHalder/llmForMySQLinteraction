@@ -134,7 +134,7 @@ with st.sidebar:
     st.subheader("Settings")
     st.write("This is a simple chat application using MySQL. Connect to the database and start chatting.")
     
-    st.text_input("Host", value="sql17.freesqldatabase.com", key="Host")
+    st.text_input("Host", value="sql7.freesqldatabase.com", key="Host")
     st.text_input("Port", value="3306", key="Port")
     st.text_input("User", value="sql7761421", key="User")
     st.text_input("Password", type="password", value="hI3tG4Eymq", key="Password")
