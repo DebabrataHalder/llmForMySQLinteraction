@@ -134,11 +134,11 @@ with st.sidebar:
     st.subheader("Settings")
     st.write("This is a simple chat application using MySQL. Connect to the database and start chatting.")
     
-    st.text_input("Host", value="sql7.freesqldatabase.com", key="Host")
+    st.text_input("Host", value="sql12.freesqldatabase.com", key="Host")
     st.text_input("Port", value="3306", key="Port")
-    st.text_input("User", value="sql7761421", key="User")
-    st.text_input("Password", type="password", value="hI3tG4Eymq", key="Password")
-    st.text_input("Database", value="sql7761421", key="Database")
+    st.text_input("User", value="sql12762658", key="User")
+    st.text_input("Password", type="password", value="xaAB7kwgp8", key="Password")
+    st.text_input("Database", value="sql12762658", key="Database")
     
     model_name = st.selectbox(
         "Select Model", 
